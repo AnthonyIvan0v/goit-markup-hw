@@ -1,0 +1,187 @@
+/* 
+--- основний білий колір та основний колір фону- #FFFFFF
+--- основний чорний колір -  #000000
+--- основний колір тексту - #212121 
+--- вторинний колір тексту - #757575
+--- синій колір тексту при hover & focus та перша чатина логотипу- #2196F3
+--- вторинний колір тексту адреси в футері - #757575 60%
+--- колір фону секції героя та футера- #2F303A
+--- колір фону секції нашої команди та кнопки на сторінці в портфоліо - #F5F4FA
+*/
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-black-color:#000000;
+    --primary-white-color: #FFFFFF;
+    --background-hero-footer-color: #2F303A;
+    --background-team-color: #F5F4FA;
+    --secondary-button-color:#F5F4FA;
+    --primary-font: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+/* ----header---- */
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size:26px;
+    line-height:1.19;
+    color: var(--primary-text-color);
+}
+.logo-accent{
+    color: var(--accent-color);
+}
+
+.site-nav{
+color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav:hover,
+.site-nav:focus {
+    color: var(--accent-color)
+}
+
+.contacts {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent-color);
+}
+
+/* ----hero---- */
+.hero{
+ background-color: var(--background-hero-footer-color)
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+}
+.hero-button{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background: var(--accent-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+}
+
+/*----our-features----*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-title{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-description{
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+/*----specialization----*/
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*----team----*/
+.team {
+    background-color: var(--background-team-color);
+}
+
+.employees-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+}
+
+.employee-specialty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+/*----footer----*/
+.footer{
+    background-color: var(--background-hero-footer-color);
+}
+ .footer-logo-accent{
+    color: var(--primary-white-color);
+ }
+
+ .adress{
+    font-style: inherit;
+ }
+
+.location{
+    line-height: 1.71;
+    color: var(--primary-white-color)
+}
+.location:hover,
+.location:focus{
+    color: var(--accent-color);
+}
+
+.footer-contacts{
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
